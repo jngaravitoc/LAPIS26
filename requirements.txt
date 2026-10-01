@@ -1,0 +1,37 @@
+# LAPIS 2026 — Python dependencies for the lectures and tutorials
+#
+# Tested with Python 3.11 and 3.12. nbody_streams does not support Python > 3.13.
+#
+# This file installs the general scientific stack. Agama and nbody_streams
+# are compiled from source and need numpy already installed, so they are
+# installed separately afterwards (see INSTALL.md, steps 4 and 5).
+#
+#   pip install -r requirements.txt
+
+# --- Build tools (Agama needs these before it can be compiled) --------------
+setuptools>=61.0
+wheel
+
+# --- Core numerical stack (nbody_streams + Agama) ---------------------------
+numpy>=1.21
+scipy>=1.7
+matplotlib>=3.4
+h5py>=3.0
+numba>=0.57
+
+# --- Optional Agama features --------------------------------------------------
+# Used by Agama for quadratic optimisation (Schwarzschild modelling and
+# non-parametric distribution functions). Installing it here means Agama's
+# setup script won't stop to ask about it.
+cvxopt
+
+# --- Used by nbody_streams helpers and example notebooks --------------------
+tqdm
+pandas
+cmasher
+astropy
+
+# --- Notebooks ------------------------------------------------------------------
+jupyterlab
+ipykernel
+ipywidgets
