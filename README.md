@@ -30,7 +30,6 @@ TBD
 The tutorial notebooks in [`projects/`](https://github.com/jngaravitoc/LAPIS26/tree/main/projects) are the starting point for the projects:
 
 - **[Dynamical friction in `gala`: the LMC orbit around the Milky Way](https://github.com/jngaravitoc/LAPIS26/blob/main/projects/dynamical_friction_MWLMC_tutorial.ipynb):** build the MW and LMC potentials, add Chandrasekhar dynamical friction to a `gala` integration, and integrate the LMC orbit as a test particle and in a live MW + LMC system. It ends with a test particle integrated in the inertial frame and in the (non-inertial) frame of the MW disk.
-- **[Stellar stream evolution in the MW + LMC system](https://github.com/jngaravitoc/LAPIS26/blob/main/projects/stream_evolution.ipynb):** generate mock streams with `gala`'s `MockStreamGenerator` in time-dependent potentials, and separate the effect of the LMC's direct pull from that of the MW's reflex motion.
 
 ## Projects
 
